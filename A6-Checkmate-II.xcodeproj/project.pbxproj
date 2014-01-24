@@ -7,8 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4402EB8B18932EC400906F4D /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4402EB8A18932EC400906F4D /* main.cpp */; };
-		4402EB8D18932EC400906F4D /* A6_Checkmate_II.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 4402EB8C18932EC400906F4D /* A6_Checkmate_II.1 */; };
+		4402EBA218932F4900906F4D /* Chess.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4402EB9518932F4900906F4D /* Chess.cpp */; };
+		4402EBA318932F4900906F4D /* Geometry.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4402EB9718932F4900906F4D /* Geometry.cpp */; };
+		4402EBA518932F4900906F4D /* Makefile in Sources */ = {isa = PBXBuildFile; fileRef = 4402EB9C18932F4900906F4D /* Makefile */; };
+		4402EBA618932F4900906F4D /* Mesh.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4402EB9D18932F4900906F4D /* Mesh.cpp */; };
+		4402EBA918932F8E00906F4D /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4402EBA818932F8E00906F4D /* OpenGL.framework */; };
+		4402EBAB18932F9200906F4D /* GLUT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4402EBAA18932F9200906F4D /* GLUT.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -18,7 +22,6 @@
 			dstPath = /usr/share/man/man1/;
 			dstSubfolderSpec = 0;
 			files = (
-				4402EB8D18932EC400906F4D /* A6_Checkmate_II.1 in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 1;
 		};
@@ -26,8 +29,21 @@
 
 /* Begin PBXFileReference section */
 		4402EB8718932EC400906F4D /* A6-Checkmate-II */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "A6-Checkmate-II"; sourceTree = BUILT_PRODUCTS_DIR; };
-		4402EB8A18932EC400906F4D /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
-		4402EB8C18932EC400906F4D /* A6_Checkmate_II.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = A6_Checkmate_II.1; sourceTree = "<group>"; };
+		4402EB9418932F4900906F4D /* bishop.mesh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = bishop.mesh; sourceTree = "<group>"; };
+		4402EB9518932F4900906F4D /* Chess.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Chess.cpp; sourceTree = "<group>"; };
+		4402EB9618932F4900906F4D /* cross.mesh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = cross.mesh; sourceTree = "<group>"; };
+		4402EB9718932F4900906F4D /* Geometry.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Geometry.cpp; sourceTree = "<group>"; };
+		4402EB9818932F4900906F4D /* Geometry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Geometry.h; sourceTree = "<group>"; };
+		4402EB9918932F4900906F4D /* king.mesh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = king.mesh; sourceTree = "<group>"; };
+		4402EB9A18932F4900906F4D /* knight.mesh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = knight.mesh; sourceTree = "<group>"; };
+		4402EB9C18932F4900906F4D /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
+		4402EB9D18932F4900906F4D /* Mesh.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Mesh.cpp; sourceTree = "<group>"; };
+		4402EB9E18932F4900906F4D /* Mesh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Mesh.h; sourceTree = "<group>"; };
+		4402EB9F18932F4900906F4D /* pawn.mesh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = pawn.mesh; sourceTree = "<group>"; };
+		4402EBA018932F4900906F4D /* queen.mesh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = queen.mesh; sourceTree = "<group>"; };
+		4402EBA118932F4900906F4D /* rook.mesh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = rook.mesh; sourceTree = "<group>"; };
+		4402EBA818932F8E00906F4D /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
+		4402EBAA18932F9200906F4D /* GLUT.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLUT.framework; path = System/Library/Frameworks/GLUT.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +51,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4402EBAB18932F9200906F4D /* GLUT.framework in Frameworks */,
+				4402EBA918932F8E00906F4D /* OpenGL.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +62,8 @@
 		4402EB7E18932EC300906F4D = {
 			isa = PBXGroup;
 			children = (
+				4402EBAA18932F9200906F4D /* GLUT.framework */,
+				4402EBA818932F8E00906F4D /* OpenGL.framework */,
 				4402EB8918932EC400906F4D /* A6-Checkmate-II */,
 				4402EB8818932EC400906F4D /* Products */,
 			);
@@ -60,10 +80,29 @@
 		4402EB8918932EC400906F4D /* A6-Checkmate-II */ = {
 			isa = PBXGroup;
 			children = (
-				4402EB8A18932EC400906F4D /* main.cpp */,
-				4402EB8C18932EC400906F4D /* A6_Checkmate_II.1 */,
+				4402EBA718932F5700906F4D /* meshes */,
+				4402EB9518932F4900906F4D /* Chess.cpp */,
+				4402EB9718932F4900906F4D /* Geometry.cpp */,
+				4402EB9818932F4900906F4D /* Geometry.h */,
+				4402EB9C18932F4900906F4D /* Makefile */,
+				4402EB9D18932F4900906F4D /* Mesh.cpp */,
+				4402EB9E18932F4900906F4D /* Mesh.h */,
 			);
 			path = "A6-Checkmate-II";
+			sourceTree = "<group>";
+		};
+		4402EBA718932F5700906F4D /* meshes */ = {
+			isa = PBXGroup;
+			children = (
+				4402EB9418932F4900906F4D /* bishop.mesh */,
+				4402EB9618932F4900906F4D /* cross.mesh */,
+				4402EB9918932F4900906F4D /* king.mesh */,
+				4402EB9A18932F4900906F4D /* knight.mesh */,
+				4402EB9F18932F4900906F4D /* pawn.mesh */,
+				4402EBA018932F4900906F4D /* queen.mesh */,
+				4402EBA118932F4900906F4D /* rook.mesh */,
+			);
+			name = meshes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -117,7 +156,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4402EB8B18932EC400906F4D /* main.cpp in Sources */,
+				4402EBA218932F4900906F4D /* Chess.cpp in Sources */,
+				4402EBA318932F4900906F4D /* Geometry.cpp in Sources */,
+				4402EBA518932F4900906F4D /* Makefile in Sources */,
+				4402EBA618932F4900906F4D /* Mesh.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -157,7 +199,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = macosx;
+				SDKROOT = macosx10.8;
 			};
 			name = Debug;
 		};
@@ -188,7 +230,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 10.9;
-				SDKROOT = macosx;
+				SDKROOT = macosx10.8;
 			};
 			name = Release;
 		};
